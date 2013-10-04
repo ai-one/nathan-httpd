@@ -80,6 +80,7 @@ __Quick Example__
 
 __Todo__
 
+* Add /:bucket/:fetch?handles=<handles> ressource for fetching multiple contexts based on handles
 * Evaluate some kind of master-slave synchronization facility to strengthen availability and data safety.
 * Add description for analysis response format.
 * Discuss more complex query functionality (batch processing, complex selections, association trees, etc.).
