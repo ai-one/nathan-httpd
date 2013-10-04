@@ -78,30 +78,11 @@ __Ressources__
 
 Bellow you find the different ressources the API has and the verbs that can be executed. You are looking at version 1 of the API.
 
-- [/](#)
-    - [[GET] List buckets](#get-list-buckets)
-- [/:bucket](#bucket)
-    - [[POST] Query bucket](#post-query-bucket)
-    - [[GET] Download dataspace](#get-download-dataspace)
-    - [[PUT] Create or replace dataspace](#put-create-or-replace-dataspace)
-    - [[DELETE] Delete dataspace](#delete-delete-dataspace)
-- [/:bucket/:handle](#buckethandle)
-    - [[POST] Insert context(s)](#post-insert-contexts)
-    - [[GET] Fetch Context](#get-fetch-context)
-    - [[PUT] Replace context](#put-replace-context)
-    - [[DELETE] Remove context](#delete-remove-context)
-- [/:bucket/:handle/find](#buckethandlefind)
-    - [[POST] Query children](#post-query-children)
-- [/:bucket/:handle/keywords](#buckethandlekeywords)
-    - [[POST] Query keywords](#post-query-keywords)
-- [/:bucket/associations](#bucketassociations)
-    - [[POST] Query assocations](#post-query-assocations)
-- [/:bucket/phonetic](#bucketphonetic)
-    - [[POST] Query phonetic similarities](#post-query-phonetic-similarities)
+@@TOC@@
 
-## /<span id=""></span>
+## /
 
-### [GET] List buckets<span id="get-list-buckets"></span>
+### [GET] List buckets
 
 __Description__
 
@@ -109,9 +90,9 @@ Lists existing buckets.
 
 ---
 
-## /:bucket<span id="bucket"></span>
+## /:bucket
 
-### [POST] Query bucket<span id="post-query-bucket"></span>
+### [POST] Query bucket
 
 __Description__
 
@@ -119,7 +100,7 @@ TBD
 
 ---
 
-### [GET] Download dataspace<span id="get-download-dataspace"></span>
+### [GET] Download dataspace
 
 __Description__
 
@@ -127,7 +108,7 @@ Download the dataspace at `/:bucket`.
 
 ---
 
-### [PUT] Create or replace dataspace<span id="put-create-or-replace-dataspace"></span>
+### [PUT] Create or replace dataspace
 
 __Description__
 
@@ -135,7 +116,7 @@ Replace the dataspace at `/:bucket`.
 
 ---
 
-### [DELETE] Delete dataspace<span id="delete-delete-dataspace"></span>
+### [DELETE] Delete dataspace
 
 __Description__
 
@@ -143,11 +124,11 @@ Deletes bucket `/:bucket`.
 
 ---
 
-## /:bucket/:handle<span id="buckethandle"></span>
+## /:bucket/:handle
 
 A `handle` uniqly identifies a context in the bucket. It has the form `_HEX`, where HEX is a hexadecimal number. Special handle `_root` identifies the root node of the bucket. 
 
-### [POST] Insert context(s)<span id="post-insert-contexts"></span>
+### [POST] Insert context(s)
 
 __Description__
 
@@ -243,7 +224,7 @@ __Dicussion__
 
 ---
 
-### [GET] Fetch Context<span id="get-fetch-context"></span>
+### [GET] Fetch Context
 
 __Description__
 
@@ -287,7 +268,7 @@ __Examples__
 
 ---
 
-### [PUT] Replace context<span id="put-replace-context"></span>
+### [PUT] Replace context
 
 __Description__
 
@@ -316,7 +297,7 @@ __Example__
 
 ---
 
-### [DELETE] Remove context<span id="delete-remove-context"></span>
+### [DELETE] Remove context
 
 __Description__
 
@@ -341,11 +322,11 @@ __Example__
 
 ---
 
-## /:bucket/:handle/find<span id="buckethandlefind"></span>
+## /:bucket/:handle/find
 
 Find allows to query child contexts of either the `_root` handle or another context handle.
 
-### [POST] Query children<span id="post-query-children"></span>
+### [POST] Query children
 
 __Description__
 
@@ -437,11 +418,11 @@ __Examples__
 
 ---
 
-## /:bucket/:handle/keywords<span id="buckethandlekeywords"></span>
+## /:bucket/:handle/keywords
 
 Keywords allows to retrieve a sorted list of the most important terms of a context and its subcontexts.
 
-### [POST] Query keywords<span id="post-query-keywords"></span>
+### [POST] Query keywords
 
 __Description__
 
@@ -522,9 +503,9 @@ __Examples__
 
 ---
 
-## /:bucket/associations<span id="bucketassociations"></span>
+## /:bucket/associations
 
-### [POST] Query assocations<span id="post-query-assocations"></span>
+### [POST] Query assocations
 
 __Description__
 
@@ -588,9 +569,9 @@ __Example__
 
 ---
 
-## /:bucket/phonetic<span id="bucketphonetic"></span>
+## /:bucket/phonetic
 
-### [POST] Query phonetic similarities<span id="post-query-phonetic-similarities"></span>
+### [POST] Query phonetic similarities
 
 __Description__
 
@@ -648,3 +629,4 @@ __Example__
 
 	[["apple",210,66],...]
 	```
+	
