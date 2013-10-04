@@ -74,6 +74,12 @@ __Quick Example__
 	[["hello",100,20],["world",99,10],...]
 	```
 
+__Todo__
+
+* Evaluate some kind of master-slave synchronization facility to strengthen availability and data safety.
+* Add description for analysis response format.
+* Discuss more complex query functionality (batch processing, complex selections, association trees, etc.).
+
 __Ressources__
 
 Bellow you find the different ressources the API has and the verbs that can be executed. You are looking at version 1 of the API.
